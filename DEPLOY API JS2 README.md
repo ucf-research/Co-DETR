@@ -12,7 +12,7 @@ The following instructions are for a complete deployment of [KShervington/Co-DET
 
 ### Create A GPU instance on Jestream 2
 
-Create a GPU instance on Jetstream2 of size `g3.large`. Adjust the volume size to 100GB and configure the settings so that you have at least on of the following ways to access the instance: SSH, Web shell, or Web desktop. Using either of these methods, open a terminal window so that you can run commands on the instance.
+Create a GPU instance on Jetstream2 of size `g3.large`. Adjust the volume size to 100GB and configure the settings so that you have at least one of the following ways to access the instance: SSH, Web shell, or Web desktop. Using either of these methods, open a terminal window so that you can run commands on the instance.
 
 ### Create and run the API initialization script
 
