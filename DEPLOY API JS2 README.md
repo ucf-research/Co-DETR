@@ -114,6 +114,18 @@ echo "✅ Co-DETR API container is running and will start on reboot."
 
 Press the `escape` key, then type `:wq`. Press the `enter` key. The file should now be saved.
 
+Run the file `codetr-api-init-js2.sh`.
+
+```
+bash codetr-api-init-js2.sh
+```
+
+Once the script has completed without errors, you will see this output:
+
+```
+? Co-DETR API container is running and will start on reboot.
+```
+
 ### Create and run the NGINX and SSL initialization script
 
 The following shell script configures a reverse proxy using NGINX to forward traffic from port 80 (HTTP) to port 443 (HTTPS), and from port 443 to port 8000 where the API runs. During the NGINX installation and configuration, an SSL certificate is created using [Let's Encrypt](https://letsencrypt.org/) Certbot. The SSL certificate will automatically update, and the NGINX server will start on every reboot.
@@ -214,20 +226,7 @@ echo "[SUCCESS] NGINX is now configured with SSL for $DOMAIN."
 echo "[INFO] Make sure your Python app is running on port 8000."
 
 ```
-
-Run the first file, `codetr-api-init-js2.sh`.
-
-```
-bash codetr-api-init-js2.sh
-```
-
-Once the script has completed without errors, you will see this output:
-
-```
-? Co-DETR API container is running and will start on reboot.
-```
-
-Now run the second file, replacing `JS2_INSTANCE_DOMAIN` with your domain. Your JS2 instance domain will be on the instance details page in Exosphere under Credentials.
+Run the following command, replacing `JS2_INSTANCE_DOMAIN` with your domain. Your JS2 instance domain will be on the instance details page in Exosphere under Credentials.
 
 ```
 bash nginx-ssl-init-js2.sh JS2_INSTANCE_DOMAIN
