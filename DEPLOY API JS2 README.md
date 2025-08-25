@@ -1,6 +1,6 @@
 # Running Co-DETR API on JS2 <!-- omit from toc -->
 
-The following deployment instructions are for a complete deployment of  [KShervington/Co-DETR](https://github.com/KShervington/Co-DETR.git) on Jetstream2 with SSL and a reverse proxy, using two shell scripts.
+The following instructions are for a complete deployment of [KShervington/Co-DETR](https://github.com/KShervington/Co-DETR.git) on Jetstream2 with SSL and a reverse proxy, using two shell scripts.
 
 ## Deployment instructions <!-- omit from toc -->
 
